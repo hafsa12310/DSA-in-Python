@@ -26,7 +26,7 @@ class HashTable:
             h+= ord(char) #ord ftn will find the ASCII value 
         return h % self.MAX 
     
-    def __setitem__(self,key,value): #__setitem__ will execute t['march 6] = 130 directly
+    def __setitem__(self,key,value): #__setitem__ will execute t['march 6'] = 130 directly
         h = self.hash_ftn(key)
         self.arr[h] = value
     
